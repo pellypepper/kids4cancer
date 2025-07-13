@@ -15,17 +15,15 @@ export default function ContactInfo() {
         {isInView && (
           <motion.div
             key="contact-info"
-            className="bg-gradient-to-br from-[#FFF1D3] via-[#FFF8E7] to-[#FFBC00]/10 rounded-3xl shadow-2xl border-2 border-[#FFBC00]/20 p-10 relative overflow-hidden"
+            className="bg-white rounded-3xl p-10 overflow-hidden"
             initial={{ opacity: 0, x: -80 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -80 }}
             transition={{ duration: 0.6, type: "spring", stiffness: 60 }}
           >
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#FFBC00]/5 to-transparent rounded-3xl"></div>
-      {/* Glowing border effect */}
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FFBC00]/30 via-transparent to-[#FFBC00]/30 blur-sm -z-10"></div>
-      <div className="relative z-10">
+    
+      <div className="bg-white rounded-3xl "></div>
+
         <h2 className="text-2xl font-semibold text-gray-700 mb-6">Connect With Us</h2>
         <div className="space-y-6">
           <div className="flex items-start space-x-4">
@@ -75,7 +73,7 @@ export default function ContactInfo() {
             <p className="text-sm text-orange-600 mt-4">Emergency support available 24/7</p>
           </div>
         </div>
-      </div>
+
      </motion.div>
         )}
       </AnimatePresence>
